@@ -61,8 +61,24 @@ HTMLActuator.prototype.addTile = function (tile) {
 
   this.applyClasses(wrapper, classes);
 
+  var outputtext = new Array();
+  outputtext[0] = "";
+  outputtext[1] = "field";
+  outputtext[2] = "content-type";
+  outputtext[3] = "entity";
+  outputtext[4] = "module";
+  outputtext[5] = "view";
+  outputtext[6] = "block";
+  outputtext[7] = "region";
+  outputtext[8] = "templates";
+  outputtext[9] = "theme";
+  outputtext[10] = "Drupal";
+  outputtext[11] = "Dries";
+
+
   inner.classList.add("tile-inner");
-  inner.textContent = tile.value;
+  //inner.textContent = tile.value;
+  inner.textContent = outputtext[(Math.log(tile.value) / Math.LN2)] || '';
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
