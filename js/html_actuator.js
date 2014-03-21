@@ -72,8 +72,8 @@ HTMLActuator.prototype.addTile = function (tile) {
   outputtext[7] = "region";
   outputtext[8] = "templates";
   outputtext[9] = "theme";
-  outputtext[10] = "Drupal";
-  outputtext[11] = "Dries";
+  outputtext[10] = "";//Drupal";
+  outputtext[11] = "";//Dries";
 
 
   inner.classList.add("tile-inner");
